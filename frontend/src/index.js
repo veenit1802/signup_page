@@ -1,5 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import axios from 'axios'
 import "./index.css"
 
 
@@ -7,7 +8,7 @@ import "./index.css"
 ReactDOM.render(
   <>
   <div className="maindiv">
-  <form>
+  <form onSubmit={onSubmit}>
     
   <input id="fname" type="text" required/>
     <label  htmlFor="fname" >First Name:</label>
@@ -32,3 +33,18 @@ ReactDOM.render(
   </>
   ,document.getElementById('root')
 );
+
+
+function onSubmit(e) {
+  e.preventDefault();
+  const data={
+    firstname:document.getElementById("fname").value,
+    username:document.getElementById("uname").value,
+    email:document.getElementById("email").value,
+    password:document.getElementById("passw").value
+  };
+
+  console.log(data.firstname)
+
+  axios.post("http://localhost:5000/users/add",data);
+}
