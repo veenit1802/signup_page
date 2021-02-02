@@ -1,0 +1,70 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:#FC766AFF;
+    margin-top: 8%;
+}
+
+.maindiv{
+    width: 75%;
+    background-color: #5B84B1FF;
+    border: 2px solid gray;
+    border-radius: 10px;
+    box-shadow: 5px 10px #000000FF;
+    
+}
+
+form{
+    padding:10%;
+   
+}
+
+
+div{
+    padding:2%;
+    width:50%;
+    margin:0 auto;
+    display: grid;
+}
+
+label,input{
+    margin-top: 10%;
+}
+
+label{
+    display: block;
+    padding-left: 5%;
+    padding-top: 2%;
+    font-size: 25px;
+    float: left;
+    text-align: center;
+}
+
+
+input:not([type="submit"])
+{
+    width:60%;
+    height:4vh;
+    outline: none;
+    border-radius: 5px;
+    float: right;
+}
+
+
+
+.btn{
+   
+    width: 30%;
+    margin-left:35%;
+    font-size: 20px;
+    padding-top:5%;
+    padding-bottom: 5%;
+
+}
+
+
+
